@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Biology Knowledge Engine</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Animation -->
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-dna"></i>
+        <span>SpaceBio Engine</span>
+      </div>
+      
+      <!-- Mobile menu toggle -->
+      <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+      <label for="mobile-menu-toggle" class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#data" class="nav-link">Data Explorer</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sidebar toggle (works via CSS) -->
+  <input type="checkbox" id="sidebarToggle" class="sidebar-toggle-checkbox">
+  <label for="sidebarToggle" class="sidebar-toggle">
+    <i class="fas fa-filter"></i> Filters
+  </label>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <label for="sidebarToggle" class="sidebar-close" aria-label="Close sidebar">&times;</label>
+    <h2>🔎 Filters</h2>
+    <label>Organism</label>
+    <select>
+      <option>Arabidopsis</option>
+      <option>Human</option>
+      <option>Mouse</option>
+    </select>
+
+    <label>Assay</label>
+    <select>
+      <option>RNA-seq</option>
+      <option>Proteomics</option>
+      <option>Imaging</option>
+    </select>
+
+    <label>Instrument</label>
+    <select>
+      <option>Illumina</option>
+      <option>Mass Spec</option>
+      <option>Microscope</option>
+    </select>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="gradient-text">Centralized Space Biology</span>
+            <br>Knowledge Engine
+          </h1>
+          <p class="hero-subtitle">AI-powered semantic search for space biology research</p>
+          <div class="hero-features">
+            <div class="feature-item">
+              <i class="fas fa-rocket"></i>
+              <span>Scalable & Fast</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-brain"></i>
+              <span>AI-Powered</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-users"></i>
+              <span>Researcher-Friendly</span>
+            </div>
+          </div>
+          <p class="hero-description">
+            Bridging the gap between NASA's space biology data and research usability
+          </p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search experiments, datasets, publications...">
+            <button class="search-btn">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="search-suggestions">
+            <div class="suggestion-item">
+              <i class="fas fa-dna"></i>
+              <span>Gene expression in microgravity</span>
+            </div>
+            <div class="suggestion-item">
+              <i class="fas fa-microscope"></i>
+              <span>Cell morphology changes</span>
+            </div>
+            <div class="suggestion-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Protein synthesis rates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Stats Section -->
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">Experiments</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Research Papers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Organisms</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Open Access</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <h3>Semantic Search</h3>
+            <p>Advanced AI-powered search that understands context and meaning, not just keywords.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Unified Database</h3>
+            <p>Centralized repository of all space biology experiments and datasets from NASA missions.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Data Visualization</h3>
+            <p>Interactive charts and graphs to explore patterns and relationships in space biology data.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-download"></i>
+            </div>
+            <h3>Easy Export</h3>
+            <p>Download datasets, generate reports, and export results in multiple formats.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Explorer Section -->
+    <section id="data" class="data-explorer">
+      <div class="container">
+        <h2 class="section-title">Data Explorer</h2>
+        <div class="explorer-tabs">
+          <button class="tab-btn active" data-tab="experiments">Experiments</button>
+          <button class="tab-btn" data-tab="datasets">Datasets</button>
+          <button class="tab-btn" data-tab="publications">Publications</button>
+        </div>
+        
+        <div class="tab-content">
+          <div class="tab-panel active" id="experiments">
+            <div class="data-grid">
+              <div class="data-card">
+                <div class="data-header">
+                  <h4>Microgravity Gene Expression</h4>
+                  <span class="data-badge">RNA-seq</span>
+                </div>
+                <p>Analysis of gene expression changes in Arabidopsis thaliana under microgravity conditions.</p>
+                <div class="data-meta">
+                  <span><i class="fas fa-calendar"></i> 2023</span>
+                  <span><i class="fas fa-user"></i> NASA Ames</span>
+                  <span><i class="fas fa-download"></i> 2.3GB</span>
+                </div>
+              </div>
+              
+              <div class="data-card">
+                <div class="data-header">
+                  <h4>Cell Division in Space</h4>
+                  <span class="data-badge">Imaging</span>
+                </div>
+                <p>Time-lapse imaging of cell division processes in human cells during spaceflight.</p>
+                <div class="data-meta">
+                  <span><i class="fas fa-calendar"></i> 2023</span>
+                  <span><i class="fas fa-user"></i> ISS</span>
+                  <span><i class="fas fa-download"></i> 1.8GB</span>
+                </div>
+              </div>
+              
+              <div class="data-card">
+                <div class="data-header">
+                  <h4>Protein Synthesis Rates</h4>
+                  <span class="data-badge">Proteomics</span>
+                </div>
+                <p>Quantitative proteomics analysis of protein synthesis rates in microgravity.</p>
+                <div class="data-meta">
+                  <span><i class="fas fa-calendar"></i> 2022</span>
+                  <span><i class="fas fa-user"></i> JAXA</span>
+                  <span><i class="fas fa-download"></i> 3.1GB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Space Biology Knowledge Engine</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>The Space Biology Knowledge Engine is a cutting-edge platform designed to revolutionize how researchers access and analyze space biology data. Built with advanced AI and machine learning technologies, it provides a unified interface for exploring the vast repository of space biology experiments conducted by NASA and international partners.</p>
+            
+            <p>Our mission is to democratize access to space biology research data, making it easier for scientists worldwide to discover, analyze, and build upon the groundbreaking research conducted in space environments.</p>
+            
+            <div class="tech-stack">
+              <h3>Technology Stack</h3>
+              <div class="tech-items">
+                <span class="tech-item">Python</span>
+                <span class="tech-item">Machine Learning</span>
+                <span class="tech-item">Elasticsearch</span>
+                <span class="tech-item">React</span>
+                <span class="tech-item">Docker</span>
+                <span class="tech-item">AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>contact@spacebioengine.org</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address</h4>
+                <p>NASA Ames Research Center<br>Moffett Field, CA 94035</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3><i class="fas fa-dna"></i> SpaceBio Engine</h3>
+          <p>Advancing space biology research through AI-powered data discovery and analysis.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#data">Data Explorer</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Space Biology Knowledge Engine. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
